@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jule César - Jeu de Cryptage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jule César - Jeu de Cryptage</h1>
+      <div class="encoded-message">
+        Message codé: <span id="codedMessage">XLMW MW XLI QIWWEKI</span>
+      </div>
+      <div class="form-group">
+        <label for="shift">Indice d'encodage :</label>
+        <input type="text" id="shift" value="4" readonly />
+      </div>
+      <div class="form-group">
+        <label for="decodedMessage">Entrez le message décodé :</label>
+        <input type="text" id="decodedMessage" />
+      </div>
+      <button id="submitButton">Envoyer</button>
+      <button id="solutionButton">Solution</button>
+      <div class="solution" id="solutionBox">
+        <p id="solutionText">Réponse correcte : VOICI LE MESSAGE</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
